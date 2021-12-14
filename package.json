@@ -5,6 +5,7 @@
   "description": "a set of common functions written in ES6 for personal usage.",
   "main": "index.js",
   "scripts": {
+    "test": "mocha",
     "release": "npm publish  --access public"
   },
   "keywords": [
@@ -13,5 +14,8 @@
     "javascript"
   ],
   "author": "Viki",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^9.1.3"
+  }
 }

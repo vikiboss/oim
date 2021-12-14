@@ -12,37 +12,39 @@
  */
 const format = (date = new Date(), formatStr = 'YYYY/MM/DD HH:mm:ss') => {
   // millisecond
-  const SSS = String(date.getMilliseconds()).slice(0, 3);
-  const SS = String(SSS.slice(0, 2));
-  const S = String(SS.slice(0, 1));
+  const SSS = String(date.getMilliseconds()).padStart(3, '0');
+  const SS = String(Math.round(Number(SSS) / 10));
+  const S = String(Math.round(Number(SSS) / 100));
 
   // second
-  const ss = String(date.getSeconds()).padStart(2, '0');
   const s = String(date.getSeconds());
+  const ss = s.padStart(2, '0');
 
   // minute
-  const mm = String(date.getMinutes()).padStart(2, '0');
   const m = String(date.getMinutes());
+  const mm = m.padStart(2, '0');
 
   // hour
-  const hh = String(date.getHours() % 12).padStart(2, '0');
-  const h = String(date.getHours() % 12);
-  const HH = String(date.getHours()).padStart(2, '0');
-  const H = String(date.getHours());
+  const hour = date.getHours();
+  const h = String(hour % 12);
+  const hh = h.padStart(2, '0');
+  const H = String(hour);
+  const HH = H.padStart(2, '0');
 
   // day
-  const DD = String(date.getDate()).padStart(2, '0');
   const D = String(date.getDate());
+  const DD = D.padStart(2, '0');
 
   // month
   const MON_MAP = 'Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec'.split('_');
-  const MMM = MON_MAP[date.getMonth()];
-  const MM = String(date.getMonth() + 1).padStart(2, '0');
-  const M = String(date.getMonth() + 1);
+  const month = date.getMonth();
+  const M = String(month + 1);
+  const MM = M.padStart(2, '0');
+  const MMM = MON_MAP[month];
 
   // year
   const YYYY = String(date.getFullYear());
-  const YY = String(date.getFullYear()).slice(2);
+  const YY = YYYY.slice(2);
 
   const map = { SSS, SS, S, ss, s, mm, m, hh, h, HH, H, DD, D, MMM, MM, M, YYYY, YY };
 
