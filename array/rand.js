@@ -4,9 +4,9 @@ const random = require('../number/random.js');
  * Returns an element(or array contains multiple random elements) from given array.
  *
  * @since 0.1.0
- * @param {Array} array The array to consult.
+ * @param {Array<T>} array The array to manipulate.
  * @param {number} [n=1] The number of elements to pick randomly, default to 1.
- * @returns {any} Returns the random element (or an array with the length meeting).
+ * @returns {Array<T>|T} Returns the random element (or an array with the length meeting).
  * @example
  *
  * oim.rand([1, 2, 3])

@@ -6,8 +6,8 @@ const rand = require('./rand.js');
  * In fact, this function uses the `oim.rand()` function directly.
  *
  * @since 0.1.0
- * @param {Array} array The array to consult.
- * @returns {Array} RReturns the randomly ordered primitive array.
+ * @param {Array<T>} array The array to manipulate.
+ * @returns {Array<T>} Returns the randomly ordered primitive array.
  * @example
  *
  * oim.shuffle([1, 2, 3])
