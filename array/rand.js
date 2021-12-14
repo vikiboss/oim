@@ -1,4 +1,5 @@
-import random from '../number/random';
+const random = require('../number/random.js');
+
 /**
  * Returns an element(or array contains multiple random elements) from given array.
  *
@@ -34,4 +35,4 @@ const rand = (array, n = 1) => {
   }
 };
 
-export default rand;
+module.exports = rand;

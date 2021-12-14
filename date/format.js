@@ -53,4 +53,4 @@ const format = (date = new Date(), formatStr = 'YYYY/MM/DD HH:mm:ss') => {
   return formatStr;
 };
 
-export default format;
+module.exports = format;

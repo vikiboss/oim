@@ -11,7 +11,7 @@ npm i @vikiboss/oim
 ## Usage
 
 ```javascript
-import oim from '@vikiboss/oim';
+const oim = require('@vikiboss/oim');
 
 console.log(oim.shuffle(['o', 'i', 'm']));
 ```

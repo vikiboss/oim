@@ -37,4 +37,4 @@ const formatDateDiff = (dateDiff, isZh = true) => {
   return `${yStr}${moStr}${dStr}${hStr}${mStr}${sStr}`;
 };
 
-export default formatDateDiff;
+module.exports = formatDateDiff;

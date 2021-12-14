@@ -1,4 +1,5 @@
-import rand from './rand';
+const rand = require('./rand.js');
+
 /**
  * Returns the randomly ordered primitive array.
  *
@@ -14,4 +15,4 @@ import rand from './rand';
  */
 const shuffle = (array) => rand(array, array.length);
 
-export default shuffle;
+module.exports = shuffle;
