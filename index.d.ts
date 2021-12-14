@@ -10,7 +10,7 @@
  * oim.chunk([1, 2, 3, 4, 5], 2);
  *    // => [[1, 2], [3, 4], [5]]
  */
-export function chunk<T>(array: Array<T>, size: number = 2): Array<Array<T>>;
+export function chunk<T>(array: Array<T>, size?: number): Array<Array<T>>;
 
 /**
  * A time format function similar to dayjs.format().
@@ -24,7 +24,7 @@ export function chunk<T>(array: Array<T>, size: number = 2): Array<Array<T>>;
  * oim.format(new Date('2020/02/07 02:07'), "YY-M-D H:m");
  *    // => '19-2-7 2:7'
  */
-export function format(date: Date = new Date(), formatStr: string = 'YYYY/MM/DD HH:mm:ss'): string;
+export function format(date?: Date, formatStr?: string): string;
 
 /**
  * Return a string of time span. (30 days pre month and 360 days pre year by default)
@@ -41,7 +41,7 @@ export function format(date: Date = new Date(), formatStr: string = 'YYYY/MM/DD 
  * oim.formatDateDiff(new Date('2020/02/07 02:07', false) - new Date('2001/04/07 04:07'));
  *    // => '19y1mo9d22h'
  */
-export function formatDateDiff(millisecond: number, isZh: boolean = true): string;
+export function formatDateDiff(millisecond: number, isZh?: boolean): string;
 
 /**
  * Returns the string on the left side of the specified sub string.
@@ -59,7 +59,7 @@ export function formatDateDiff(millisecond: number, isZh: boolean = true): strin
  * oim.left("ooimm", "i", true);
  *    // => "ooim"
  */
-export function left(string: string, sub: string, greed: boolean = false): string;
+export function left(string: string, sub: string, greed?: boolean): string;
 
 /**
  * Return the middle text of given string.
@@ -78,7 +78,7 @@ export function left(string: string, sub: string, greed: boolean = false): strin
  * oim.mid("ooimm", "o", "m", true);
  *    // => "oim"
  */
-export function mid(string: string, start: string, end: string, greed: boolean = false): string;
+export function mid(string: string, start: string, end: string, greed?: boolean): string;
 
 /**
  * Returns an element(or array contains multiple random elements) from given array.
@@ -95,7 +95,7 @@ export function mid(string: string, start: string, end: string, greed: boolean =
  * oim.rand([1, 2, 3], 2);
  *    // => [1, 3]
  */
-export function rand<T>(array: Array<T>, n: number = 1): Array<T> | T;
+export function rand<T>(array: Array<T>, n?: number): Array<T> | T;
 
 /**
  * Produces a random number between `min` and `max` bounds.
@@ -109,7 +109,7 @@ export function rand<T>(array: Array<T>, n: number = 1): Array<T> | T;
  * oim.random(0, 5);
  *    // => 3
  */
-export function random(min: number = 0, max: number = 1): number;
+export function random(min?: number, max?: number): number;
 
 /**
  * Returns the string on the right side of the specified sub string.
@@ -127,7 +127,7 @@ export function random(min: number = 0, max: number = 1): number;
  * oim.right("ooimm", "i", true);
  *    // => "ooim"
  */
-export function right(string: string, sub: string, greed: boolean = false): string;
+export function right(string: string, sub: string, greed?: boolean): string;
 
 /**
  * Returns the randomly ordered primitive array.
@@ -142,7 +142,7 @@ export function right(string: string, sub: string, greed: boolean = false): stri
  * oim.shuffle([1, 2, 3]);
  *    // => [3, 1, 2]
  */
-export function shuffle(array: Array<T>): Array<T>;
+export function shuffle<T>(array: Array<T>): Array<T>;
 
 /**
  * Returns a Promise to wait for the specified milliseconds.
@@ -154,7 +154,7 @@ export function shuffle(array: Array<T>): Array<T>;
  *
  * await oim.await(3000);
  */
-export function wait(ms: number = 1000): Promise<undefined>;
+export function wait(ms?: number): Promise<undefined>;
 
 export interface Oim {
   chunk: typeof chunk;
