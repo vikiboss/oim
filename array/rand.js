@@ -8,11 +8,11 @@ import random from '../number/random';
  * @returns {any} Returns the random element (or an array with the length meeting).
  * @example
  *
- * rand([1, 2, 3])
- *    // => a random element in the given array.
+ * oim.rand([1, 2, 3])
+ *    // => 2
  *
- * rand([1, 2, 3], 2)
- *    // => two random elements in the given array.
+ * oim.rand([1, 2, 3], 2)
+ *    // => [1, 3]
  */
 const rand = (array, n = 1) => {
   n = Math.min(array.length, n);

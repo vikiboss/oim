@@ -7,7 +7,7 @@
  * @returns {string} Return the formated string.
  * @example
  *
- * format(new Date('2020/02/07 02:07'), "YY-M-D H:m");
+ * oim.format(new Date('2020/02/07 02:07'), "YY-M-D H:m");
  *    // => '19-2-7 2:7'
  */
 const format = (date = new Date(), formatStr = 'YYYY/MM/DD HH:mm:ss') => {

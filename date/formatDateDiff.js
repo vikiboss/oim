@@ -6,10 +6,10 @@
  * @returns {string} Return the random integer.
  * @example
  *
- * formatDateDiff(new Date('2020/02/07 02:07') - new Date('2001/04/07 04:07'));
+ * oim.formatDateDiff(new Date('2020/02/07 02:07') - new Date('2001/04/07 04:07'));
  *    // => '19年1月9天22时'
  *
- * formatDateDiff(new Date('2020/02/07 02:07', false) - new Date('2001/04/07 04:07'));
+ * oim.formatDateDiff(new Date('2020/02/07 02:07', false) - new Date('2001/04/07 04:07'));
  *    // => '19y1mo9d22h'
  */
 const formatDateDiff = (dateDiff, isZh = true) => {
