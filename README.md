@@ -16,7 +16,7 @@ const oim = require('@vikiboss/oim');
 console.log(oim.shuffle(['o', 'i', 'm']));
 ```
 
-> full list of the functions see [list](./oim.d.ts)
+> Full list of the functions see [list](./oim.d.ts)
 
 ## LICENSE
 
