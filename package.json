@@ -1,0 +1,14 @@
+{
+  "name": "oim",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "a set of common functions written in ES6 for personal usage.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "tool",
+    "javascript"
+  ],
+  "author": "Viki",
+  "license": "MIT"
+}
