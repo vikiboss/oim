@@ -10,12 +10,13 @@
  * oim.chunk([1, 2, 3, 4, 5], 2);
  *    // => [[1, 2], [3, 4], [5]]
  */
-const chunk = (array, size = 2) => {
+const chunk = (array, n = 2) => {
   const length = array.length;
-  if (!length || size < 1) return [];
-  let [index, resindex] = [0, 0];
-  const result = new Array(Math.ceil(length / size));
-  while (index < length) result[resindex++] = array.slice(index, (index += size));
+  n = Math.min(n, length);
+  if (!length || n < 1) return [];
+  let [index, res] = [0, 0];
+  const result = new Array(Math.ceil(length / n));
+  while (index < length) result[res++] = array.slice(index, (index += n));
   return result;
 };
 
