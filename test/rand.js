@@ -1,7 +1,7 @@
 // rand.js
 
 const assert = require('assert');
-const rand = require('../array/rand.js');
+const { rand } = require('../index.js');
 
 describe('array/rand()', () => {
   it(`rand([1, 2, 3])`, () => {

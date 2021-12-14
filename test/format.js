@@ -1,7 +1,7 @@
 // format.js
 
 const assert = require('assert');
-const format = require('../date/format.js');
+const { format } = require('../index.js');
 
 describe('date/format()', () => {
   it(`format(new Date('2021-12-12 12:12:12:120'))`, () => {

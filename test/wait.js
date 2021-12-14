@@ -1,7 +1,7 @@
 // wait.js
 
 const assert = require('assert');
-const wait = require('../other/wait.js');
+const { wait } = require('../index.js');
 
 describe('other/wait()', () => {
   it(`await wait`, async () => {

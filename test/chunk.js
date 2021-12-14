@@ -1,7 +1,7 @@
 // chunk.js
 
 const assert = require('assert');
-const chunk = require('../array/chunk.js');
+const { chunk } = require('../index.js');
 
 describe('array/chunk()', () => {
   it(`chunk([1, 2, 3, 4], 2)`, () => {

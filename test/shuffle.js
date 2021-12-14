@@ -1,7 +1,7 @@
 // shuffle.js
 
 const assert = require('assert');
-const shuffle = require('../array/shuffle.js');
+const { shuffle } = require('../index.js');
 
 describe('array/shuffle()', () => {
   it('shuffle([0, 1, 2, 3])', () => {
