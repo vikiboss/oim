@@ -1,12 +1,12 @@
 /**
- * Returns a Promise to wait for the specified milliseconds.
+ * Return the middle text of given string.
  *
  * @since 0.1.4
  * @param {string} string The string to manipulate.
  * @param {string} start The start string to find.
  * @param {string} end The end string to find.
- * @param {boolean} [greedy=false] The number of milliseconds to wait.
- * @returns {Promise<null>} Returns a Promise to wait for the specified milliseconds.
+ * @param {boolean} [greed=false] Whether to use greed mode.
+ * @returns {Promise<null>} Return the middle text of given string.
  * @example
  *
  * oim.mid("ooimm", "o", "m");
@@ -15,9 +15,9 @@
  * oim.mid("ooimm", "o", "m", true);
  *    // => "oim"
  */
-const mid = (string, start, end, greedy = false) => {
+const mid = (string, start, end, greed = false) => {
   const front = string.indexOf(start);
-  const back = greedy ? string.lastIndexOf(end) : string.indexOf(end);
+  const back = greed ? string.lastIndexOf(end) : string.indexOf(end);
   return string.slice(front + start.length, back);
 };
 
