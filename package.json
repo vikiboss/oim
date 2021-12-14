@@ -1,14 +1,19 @@
 {
   "name": "@vikiboss/oim",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "a set of common functions written in ES6 for personal usage.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "release": "npm publish  --access public"
+  },
   "keywords": [
     "tool",
     "javascript"
   ],
   "author": "Viki",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@vikiboss/oim": "^0.1.0"
+  }
 }

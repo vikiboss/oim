@@ -1,5 +1,5 @@
 import random from './number/random.js';
-import rand from './other/rand.js';
+import rand from './array/rand.js';
 import format from './date/format.js';
 import formatDateDiff from './date/formatDateDiff.js';
 

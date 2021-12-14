@@ -2,7 +2,7 @@
 
 A set of common functions written in ES6 for personal usage.
 
-## installation
+## Installation
 
 ```bash
 npm i @vikiboss/oim
@@ -11,7 +11,7 @@ npm i @vikiboss/oim
 ## Usage
 
 ```javascript
-const oim = require('@vikiboss/oim');
+import oim from '@vikiboss/oim';
 
 console.log(oim.shuffle(['o', 'i', 'm']));
 ```
