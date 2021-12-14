@@ -9,10 +9,10 @@ const random = require('../number/random.js');
  * @returns {Array<T>|T} Returns the random element (or an array with the length meeting).
  * @example
  *
- * oim.rand([1, 2, 3])
+ * oim.rand([1, 2, 3]);
  *    // => 2
  *
- * oim.rand([1, 2, 3], 2)
+ * oim.rand([1, 2, 3], 2);
  *    // => [1, 3]
  */
 const rand = (array, n = 1) => {

@@ -7,8 +7,8 @@
  * @return {number} Return the random integer.
  * @example
  *
- * oim.random(0, 5)
- *    // => an integer between 0 and 5
+ * oim.random(0, 5);
+ *    // => 3
  */
 const random = (min = 0, max = 1) => Math.floor(Math.random() * (max - min + 1)) + min;
 

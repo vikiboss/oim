@@ -7,8 +7,8 @@
  * @returns {Array<T>} Returns the chunk array.
  * @example
  *
- * oim.chunk([1, 2, 3, 4], 2);
- *    // => [[1, 2], [3, 4]]
+ * oim.chunk([1, 2, 3, 4, 5], 2);
+ *    // => [[1, 2], [3, 4], [5]]
  */
 const chunk = (array, size = 2) => {
   const length = array.length;

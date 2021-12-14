@@ -10,7 +10,7 @@ const rand = require('./rand.js');
  * @returns {Array<T>} Returns the randomly ordered primitive array.
  * @example
  *
- * oim.shuffle([1, 2, 3])
+ * oim.shuffle([1, 2, 3]);
  *    // => [3, 1, 2]
  */
 const shuffle = (array) => rand(array, array.length);
