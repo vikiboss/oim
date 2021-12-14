@@ -8,12 +8,10 @@
     "release": "npm publish  --access public"
   },
   "keywords": [
+    "util",
     "tool",
     "javascript"
   ],
   "author": "Viki",
-  "license": "MIT",
-  "dependencies": {
-    "@vikiboss/oim": "^0.1.1"
-  }
+  "license": "MIT"
 }
