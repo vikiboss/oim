@@ -1,5 +1,3 @@
-// shuffle.js
-
 const assert = require('assert');
 const { shuffle } = require('../index.js');
 

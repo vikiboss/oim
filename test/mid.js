@@ -1,5 +1,3 @@
-// mid.js
-
 const assert = require('assert');
 const { mid } = require('../index.js');
 

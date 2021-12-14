@@ -1,5 +1,3 @@
-// chunk.js
-
 const assert = require('assert');
 const { chunk } = require('../index.js');
 

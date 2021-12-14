@@ -1,5 +1,3 @@
-// format.js
-
 const assert = require('assert');
 const { format } = require('../index.js');
 

@@ -1,5 +1,3 @@
-// wait.js
-
 const assert = require('assert');
 const { wait } = require('../index.js');
 

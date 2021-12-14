@@ -1,5 +1,3 @@
-// formatDateDiff.js
-
 const assert = require('assert');
 const { formatDateDiff } = require('../index.js');
 

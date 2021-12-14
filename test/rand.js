@@ -1,5 +1,3 @@
-// rand.js
-
 const assert = require('assert');
 const { rand } = require('../index.js');
 
