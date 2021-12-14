@@ -6,7 +6,7 @@
  * @param {string} start The start string to find.
  * @param {string} end The end string to find.
  * @param {boolean} [greed=false] Whether to use greed mode.
- * @returns {Promise<null>} Return the middle text of given string.
+ * @returns {string} Return the middle text of given string.
  * @example
  *
  * oim.mid("ooimm", "o", "m");
@@ -18,6 +18,7 @@
 const mid = (string, start, end, greed = false) => {
   const front = string.indexOf(start);
   const back = greed ? string.lastIndexOf(end) : string.indexOf(end);
+  if (front === -1 || back === -1 || front + start.length >= back) return '';
   return string.slice(front + start.length, back);
 };
 
