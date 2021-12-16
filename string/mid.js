@@ -17,7 +17,7 @@
  */
 const mid = (string, start, end, greed = false) => {
   const front = string.indexOf(start);
-  const back = greed ? string.lastIndexOf(end) : string.indexOf(end);
+  const back = greed ? string.lastIndexOf(end) : string.indexOf(end, front);
   if (front === -1 || back === -1 || front + start.length >= back) return '';
   return string.slice(front + start.length, back);
 };
