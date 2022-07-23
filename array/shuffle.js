@@ -1,5 +1,3 @@
-const rand = require('./rand.js');
-
 /**
  * Returns the randomly ordered primitive array.
  *
@@ -13,6 +11,9 @@ const rand = require('./rand.js');
  * oim.shuffle([1, 2, 3]);
  *    // => [3, 1, 2]
  */
-const shuffle = (array) => rand(array, array.length);
+const shuffle = (array) => {
+  console.log(array);
+  return array.sort(() => 0.5 - Math.random());
+};
 
 module.exports = shuffle;

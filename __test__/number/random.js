@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { random } = require('../index.js');
+const { random } = require('../../index.js');
 
 describe('number/random()', () => {
   it('random()', () => {

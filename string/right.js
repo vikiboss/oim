@@ -9,10 +9,10 @@
  * @example
  *
  * oim.right("ooimm", "m");
- *    // => "ooi"
+ *    // => ""
  *
- * oim.right("ooimm", "i", true);
- *    // => "ooim"
+ * oim.right("ooimm", "m", true);
+ *    // => "m"
  */
 const right = (string, sub, greed = false) => {
   const index = greed ? string.indexOf(sub) : string.lastIndexOf(sub);

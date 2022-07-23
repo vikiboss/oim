@@ -1,11 +1,11 @@
 {
   "name": "@vikiboss/oim",
-  "version": "0.1.9",
-  "type": "commonjs",
+  "version": "0.1.10",
   "description": "a set of common functions written in ES6 for personal usage.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha ./__test__/**/*.js",
+    "test:watch": "mocha ./__test__/**/*.js --watch",
     "release": "npm publish  --access public"
   },
   "keywords": [

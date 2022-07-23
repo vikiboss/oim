@@ -3,8 +3,8 @@
  *
  * @since 0.1.0
  * @param {number} millisecond The date diff milliseconds.
- * @param {boolean} [isZh=true] The date diff milliseconds.
- * @returns {string} Return the random integer.
+ * @param {boolean} [isZh=true] The time locale. True is means Chinese, while false refers to English.
+ * @returns {string} Return the time diff description.
  * @example
  *
  * oim.formatDateDiff(new Date('2020/02/07 02:07') - new Date('2001/04/07 04:07'));

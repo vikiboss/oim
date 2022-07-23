@@ -2,13 +2,11 @@
 
 A set of common functions written in ES6 for personal usage.
 
-## Installation
+## Get Started
 
 ```bash
 npm i @vikiboss/oim
 ```
-
-## Usage
 
 ```javascript
 const oim = require('@vikiboss/oim');
@@ -16,7 +14,9 @@ const oim = require('@vikiboss/oim');
 console.log(oim.shuffle(['o', 'i', 'm']));
 ```
 
-> Full list of the functions see [list](./oim.d.ts)
+## Function List
+
+see [here](./index.d.ts) for full function list.
 
 ## LICENSE
 

@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { formatDateDiff } = require('../index.js');
+const { formatDateDiff } = require('../../index.js');
 
 describe('date/formatDateDiff()', () => {
   it(`formatDateDiff(1000*60*60*24*30*3 + 1000*60*60*24*20 + 1000*60*60*12 + 1000*60*45 + 1000*25)`, () => {
